@@ -222,7 +222,7 @@ export default function BodyFatEstimatorWizard() {
     // Adjusted main container: removed justify-center, added pb-28 for spacing below buttons
     <div className="mx-auto max-w-5xl p-6 sm:p-10 lg:p-14 rounded-2xl shadow-xl font-sans min-h-screen flex flex-col relative pb-28" /* Changed min-h, removed justify-center, increased pb */ style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
          {/* Logo added top-left */}
-         <img src="/Logo.jpg" alt="Logo" className="absolute top-6 left-6 sm:top-10 sm:left-10 h-10 sm:h-12 w-auto z-10" /> {/* Ensure z-index if needed */}
+         <img src="/Logo.png" alt="Logo" className="absolute top-6 left-6 sm:top-10 sm:left-10 h-10 sm:h-12 w-auto z-10" /> {/* Ensure z-index if needed */}
 
          <div className="relative text-center mb-10 sm:mb-14 flex-shrink-0"> {/* Header part */}
              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight inline-block" style={{ color: PALETTE.ACCENT }}> {TR.estimatorTitle} </h1>
