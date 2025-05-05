@@ -219,11 +219,8 @@ export default function BodyFatEstimatorWizard() {
   const CustomBarTooltip = ({ active, payload }: TooltipProps<ValueType, NameType>) => { if (active && payload && payload.length) { const data = payload[0].payload; return ( <div className="p-3 rounded border text-base" style={{ background: PALETTE.CARD_BACKGROUND, borderColor: PALETTE.BORDER_COLOR, color: PALETTE.TEXT_PRIMARY }}> <p className="font-bold mb-1" style={{ color: PALETTE.ACCENT }}>{`${data.name}`}</p> <p style={{ color: PALETTE.TEXT_PRIMARY }}>{`VY%: ${formatValue(data['BF%'])}%`}</p> </div> ); } return null; };
 
   return (
-    // Adjusted main container: removed justify-center, added pb-32 for more spacing below buttons
-    <div className="mx-auto max-w-5xl p-6 sm:p-10 lg:p-14 rounded-2xl shadow-xl font-sans min-h-screen flex flex-col relative pb-32" /* Changed min-h, removed justify-center, increased pb */ style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
-         {/* Logo added top-left */}
-         <img src="/Logo.png" alt="Logo" className="absolute top-6 left-6 sm:top-10 sm:left-10 h-10 sm:h-12 w-auto z-10" /> {/* Ensure z-index if needed */}
-
+    // Adjusted main container: removed justify-center, added pb-24 for spacing below buttons
+    <div className="mx-auto max-w-5xl p-6 sm:p-10 lg:p-14 rounded-2xl shadow-xl font-sans min-h-screen flex flex-col relative pb-24" style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
          <div className="relative text-center mb-10 sm:mb-14 flex-shrink-0"> {/* Header part */}
              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight inline-block" style={{ color: PALETTE.ACCENT }}> {TR.estimatorTitle} </h1>
              <div className="absolute top-0 right-0 -mt-2 h-full flex items-start group">
@@ -241,7 +238,7 @@ export default function BodyFatEstimatorWizard() {
          </div>
          {currentStep > 0 && currentStep < 8 && (
             // Added margin-bottom to prevent overlap with absolute positioned Instagram icon
-             <div className="flex justify-between mt-12 mb-16 flex-shrink-0"> {/* Kept mb-16 */}
+             <div className="flex justify-between mt-12 mb-16 flex-shrink-0"> {/* Added mb-16 */}
                  <button onClick={handleBack} className="px-8 py-3 text-lg bg-[#1A1A1A] hover:bg-[#333333] text-[#F8F8F8] font-semibold rounded-lg transition duration-200 ease-in-out shadow-md border border-[#333366] flex items-center" disabled={isLoading}>
                      <ArrowLeft className="mr-2 h-6 w-6" /> {TR.backButton}
                  </button>
