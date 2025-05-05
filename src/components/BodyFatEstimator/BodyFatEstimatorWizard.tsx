@@ -219,8 +219,8 @@ export default function BodyFatEstimatorWizard() {
   const CustomBarTooltip = ({ active, payload }: TooltipProps<ValueType, NameType>) => { if (active && payload && payload.length) { const data = payload[0].payload; return ( <div className="p-3 rounded border text-base" style={{ background: PALETTE.CARD_BACKGROUND, borderColor: PALETTE.BORDER_COLOR, color: PALETTE.TEXT_PRIMARY }}> <p className="font-bold mb-1" style={{ color: PALETTE.ACCENT }}>{`${data.name}`}</p> <p style={{ color: PALETTE.TEXT_PRIMARY }}>{`VY%: ${formatValue(data['BF%'])}%`}</p> </div> ); } return null; };
 
   return (
-    // Adjusted main container: removed justify-center, added pb-28 for spacing below buttons
-    <div className="mx-auto max-w-5xl p-6 sm:p-10 lg:p-14 rounded-2xl shadow-xl font-sans min-h-screen flex flex-col relative pb-28" /* Changed min-h, removed justify-center, increased pb */ style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
+    // Adjusted main container: removed justify-center, added pb-32 for more spacing below buttons
+    <div className="mx-auto max-w-5xl p-6 sm:p-10 lg:p-14 rounded-2xl shadow-xl font-sans min-h-screen flex flex-col relative pb-32" /* Changed min-h, removed justify-center, increased pb */ style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
          {/* Logo added top-left */}
          <img src="/Logo.png" alt="Logo" className="absolute top-6 left-6 sm:top-10 sm:left-10 h-10 sm:h-12 w-auto z-10" /> {/* Ensure z-index if needed */}
 
