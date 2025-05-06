@@ -235,11 +235,14 @@ export default function BodyFatEstimatorWizard() {
     className="w-full min-h-dvh p-6 sm:p-10 lg:p-14 font-sans flex flex-col relative pb-24"
     style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
         
-        <div className="absolute left-0 top-1/2 -translate-y-1/2">
-  <a
-    href="/"
+        
+
+         <div className="relative text-center mb-10 sm:mb-14 flex-shrink-0"> {/* Header part */}
+         <a
+    href="https://atlasakin.com"                /* ← yeni hedef  */
     title="Anasayfa"
-    className="flex items-center justify-center w-9 h-9 rounded-full
+    className="absolute top-0 left-0 -mt-2 w-6 h-6 sm:w-7 sm:h-7
+               flex items-center justify-center rounded-full
                hover:bg-[#333366] transition"
     style={{
       background: PALETTE.CARD_BACKGROUND,
@@ -247,13 +250,8 @@ export default function BodyFatEstimatorWizard() {
       color: PALETTE.INFO_ICON_COLOR,
     }}
   >
-    {/* SVG ikon */}
-    <Home size={18} />
-    
+    <Home size={16} />
   </a>
-</div>
-
-         <div className="relative text-center mb-10 sm:mb-14 flex-shrink-0"> {/* Header part */}
              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight inline-block" style={{ color: PALETTE.ACCENT }}> {TR.estimatorTitle} </h1>
              <div className="absolute top-0 right-0 -mt-2 h-full flex items-start group">
                  <span className="cursor-help rounded-full w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center text-sm sm:text-base font-bold" style={{ background: PALETTE.CARD_BACKGROUND, color: PALETTE.INFO_ICON_COLOR, border: `1px solid ${PALETTE.BORDER_COLOR}`}}><Info size={16}/></span>
