@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://atlasakin.github.io/bodyfatcalculator",
+  "homepage": "https://calculator.atlasakin.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

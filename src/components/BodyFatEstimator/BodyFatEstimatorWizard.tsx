@@ -13,7 +13,7 @@ import {
   TooltipProps
 } from "recharts";
 import { ValueType, NameType } from 'recharts/types/component/DefaultTooltipContent';
-import { ArrowLeft, ArrowRight, Loader2, Mail, Info, Instagram } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Loader2, Mail, Info, Instagram, Home } from 'lucide-react';
 
 /****************************
  * Dil (Language) Ayarları - Turkish
@@ -234,6 +234,25 @@ export default function BodyFatEstimatorWizard() {
     <div
     className="w-full min-h-dvh p-6 sm:p-10 lg:p-14 font-sans flex flex-col relative pb-24"
     style={{ background: PALETTE.BACKGROUND, color: PALETTE.TEXT_PRIMARY }}>
+        
+        <div className="absolute left-0 top-1/2 -translate-y-1/2">
+  <a
+    href="/"
+    title="Anasayfa"
+    className="flex items-center justify-center w-9 h-9 rounded-full
+               hover:bg-[#333366] transition"
+    style={{
+      background: PALETTE.CARD_BACKGROUND,
+      border: `1px solid ${PALETTE.BORDER_COLOR}`,
+      color: PALETTE.INFO_ICON_COLOR,
+    }}
+  >
+    {/* SVG ikon */}
+    <Home size={18} />
+    
+  </a>
+</div>
+
          <div className="relative text-center mb-10 sm:mb-14 flex-shrink-0"> {/* Header part */}
              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight inline-block" style={{ color: PALETTE.ACCENT }}> {TR.estimatorTitle} </h1>
              <div className="absolute top-0 right-0 -mt-2 h-full flex items-start group">
